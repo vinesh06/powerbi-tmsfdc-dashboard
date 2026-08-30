@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# powerbi-tmsfdc-dashboard
-=======
+
 # TM ONE: Development of Power BI Dashboard for Product Holding & SFDC Opportunity Analysis
 
 [![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
