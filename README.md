@@ -23,19 +23,6 @@ This project delivers an enterprise-grade **Business Intelligence (BI) Dashboard
 
 ---
 
-## 🚀 Repository Name Suggestions
-
-If you are publishing or renaming this repository on GitHub, here are curated naming recommendations:
-
-| Recommendation | Repository Name | Target Audience / Impression |
-| :--- | :--- | :--- |
-| **Option 1 (Recommended)** | `tmone-product-holding-sfdc-bi` | **Industry & Enterprise standard**. Concisely captures company partner, core domains, and BI focus. |
-| **Option 2 (Tool-Centric)** | `powerbi-tmone-holdings-sfdc` | **Recruiter & Power BI Specialist focus**. Emphasizes Microsoft Power BI right up front. |
-| **Option 3 (Strategic / Domain)** | `tmone-customer360-sales-pipeline` | **Business & Executive focus**. Highlights high-value enterprise deliverables (Customer 360 & Sales Funnel). |
-| **Option 4 (Academic / Portfolio)** | `data-engineering-powerbi-tmsfdc` | **Data Engineering Portfolio**. Showcases end-to-end data pipeline and modeling capabilities. |
-| **Option 5 (Current)** | `powerbi-tmsfdc-dashboard` | **Clean & Compact**. Direct, concise project folder identifier. |
-
----
 
 ## 🎯 Problem Statement & Challenges
 
@@ -104,39 +91,6 @@ flowchart TD
     Visualization --> S2
 ```
 
----
-
-## 📂 Repository Folder Structure
-
-```
-powerbi-tmsfdc-dashboard/
-├── docs/                                          # Project specifications & technical documentation
-│   └── .gitkeep
-├── screenshots/                                   # Architectural models, wireframes & UML diagrams
-│   ├── activity_diagram_uc01_view_executive_overview.png
-│   ├── sequence_diagram_uc01_view_executive_overview.png
-│   ├── activity_diagram_uc02_analyze_product_holding.png
-│   ├── sequence_diagram_uc02_analyze_product_holding.png
-│   ├── activity_diagram_uc03_view_customer_360.png
-│   ├── sequence_diagram_uc03_view_customer_360.png
-│   ├── activity_diagram_uc04_analyze_sfdc_pipeline.png
-│   ├── sequence_diagram_uc04_analyze_sfdc_pipeline.png
-│   ├── activity_diagram_uc05_apply_slicers_and_filters.png
-│   ├── sequence_diagram_uc05_apply_slicers_and_filters.png
-│   ├── activity_diagram_uc06_navigate_between_pages.png
-│   ├── sequence_diagram_uc06_navigate_between_pages.png
-│   ├── erd_diagram.png                            # Data model entity-relationship diagram
-│   ├── interface_design_wireframes.png            # 4-page dashboard UI layout blueprint
-│   ├── system_architecture_diagram.png            # End-to-end data pipeline architecture
-│   └── use_case_diagram.png                       # System functional use case diagram
-├── dax-measures/                                  # Version-controlled DAX calculation scripts
-│   ├── product_holding_measures.dax               # 8 production product holding DAX measures
-│   └── sfdc_pipeline_measures.dax                 # 8 production SFDC opportunity DAX measures
-├── .gitignore                                     # Excludes .pbix, .xlsx, .csv, cache files
-└── README.md                                      # Comprehensive project documentation
-```
-
----
 
 ## 📊 Dashboard Modules & Key Visualizations
 
@@ -309,23 +263,6 @@ To ensure data integrity, UI responsiveness, and reliable reporting, testing was
 
 ---
 
-## 💻 Getting Started
-
-### Prerequisites
-- [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) (August 2023 release or newer recommended)
-- Access to sanitized or demo versions of TM ONE `Append1` and `SFDC` datasets
-
-### Installation & Exploration
-1. Clone this repository to your local workstation:
-   ```bash
-   git clone https://github.com/<your-username>/powerbi-tmsfdc-dashboard.git
-   ```
-2. Open the Power BI dashboard (`.pbix`) in Microsoft Power BI Desktop.
-3. Review and edit DAX measures using the scripts in `dax-measures/`.
-4. Inspect the architectural blueprints and UML sequences in `screenshots/` to understand data interactions and design flow.
-
----
-
 ## 👨‍💻 Project Information & Credits
 
 - **Developer**: Vinesh A/L Vijayakumar (Matric No: A22EC0290)
@@ -333,4 +270,4 @@ To ensure data integrity, UI responsiveness, and reliable reporting, testing was
 - **Faculty**: Faculty of Computing, Universiti Teknologi Malaysia (UTM)
 - **Industry Collaboration**: TM ONE (Malaysia) Sdn. Bhd.
 - **Academic Session**: 2024 / 2025
->>>>>>> f9a2ea1 (Initial commit for Power BI TM SFDC dashboard)
+
