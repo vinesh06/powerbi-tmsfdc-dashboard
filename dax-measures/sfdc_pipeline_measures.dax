@@ -1,0 +1,40 @@
+-- Count of distinct sales opportunities
+Total Opportunities = 
+DISTINCTCOUNT ( SFDC[Opportunity ID] )
+
+-- Total value of all opportunity contracts
+Total Contract Amount = 
+SUM ( SFDC[Contract Amount (Excluding SST)] )
+
+-- Total scheduled delivery/billing value
+Total Schedule Amount = 
+SUM ( SFDC[Sum of Schedule Amount] )
+
+-- Average cycle time an opportunity stays in a stage
+Average Stage Duration = 
+AVERAGE ( SFDC[Stage Duration] )
+
+-- Count of won/closed deals
+Closed Opportunities = 
+CALCULATE (
+    [Total Opportunities],
+    SFDC[Stage] IN { "Closed", "Closed Won" }
+)
+
+-- Win / conversion rate
+Closed Opportunity % = 
+DIVIDE ( [Closed Opportunities], [Total Opportunities] )
+
+-- Count of pipeline migration deals
+Migration Opportunities = 
+CALCULATE (
+    [Total Opportunities],
+    CONTAINSSTRING ( SFDC[Opportunity Name], "Migration" )
+)
+
+-- Value of pipeline migration deals
+Migration Contract Amount = 
+CALCULATE (
+    [Total Contract Amount],
+    CONTAINSSTRING ( SFDC[Opportunity Name], "Migration" )
+)

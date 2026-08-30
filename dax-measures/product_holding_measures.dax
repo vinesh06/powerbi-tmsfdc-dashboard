@@ -1,0 +1,34 @@
+-- Total revenue value held by customers
+Total Holding Amount = 
+SUM ( Append1[AMOUNT] )
+
+-- Total volume of product holding records
+Total Product Holding Records = 
+COUNTROWS ( Append1 )
+
+-- Count of distinct customers
+Total Customers = 
+DISTINCTCOUNT ( Append1[CUSTOMER_ID] )
+
+-- Count of distinct customer accounts
+Total Accounts = 
+DISTINCTCOUNT ( Append1[ACCOUNT_NO] )
+
+-- Count of distinct products
+Distinct Product Codes = 
+DISTINCTCOUNT ( Append1[PRODUCT_CODE] )
+
+-- Revenue from recurring contracts only
+Recurring Holding Amount = 
+CALCULATE (
+    [Total Holding Amount],
+    Append1[One-Off Recurring] = "Recurring"
+)
+
+-- Proportion of recurring revenue vs total holding
+Recurring Holding % = 
+DIVIDE ( [Recurring Holding Amount], [Total Holding Amount] )
+
+-- Average revenue per customer
+Average Holding Amount per Customer = 
+DIVIDE ( [Total Holding Amount], [Total Customers] )

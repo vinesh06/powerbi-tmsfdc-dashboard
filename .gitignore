@@ -1,0 +1,8 @@
+*.xlsx
+*.xls
+*.csv
+*.pbix
+*.pbit
+.DS_Store
+Thumbs.db
+.vscode/
